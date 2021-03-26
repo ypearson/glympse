@@ -95,7 +95,7 @@ if __name__ == '__main__':
         csv_strings += [[
         str(p+variants_discovered[p][1][0][2]),
         variants_discovered[p][1][0][0],
-        variants_discovered[p][1][0][1], str(count)]]
+        variants_discovered[p][1][0][1], str(count)]] # Sorry for the magic number, can be improved!!
 
     with open('result.csv', 'w') as csvfile:
         csvwriter = csv.writer(csvfile)
